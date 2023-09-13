@@ -1,3 +1,5 @@
+// ENTRY POINT FOR MY EXPRESS APP
+
 const express = require( 'express' )
 const app = express()
 
