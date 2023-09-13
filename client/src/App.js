@@ -7,7 +7,7 @@ function App() {
 
     useEffect(() => {
 
-      fecth('/api')
+      fetch('/api')
                                    // will "FETCH" data from my back-end express server. //
         .then((response) => {
           if (!response.ok) {
@@ -20,7 +20,7 @@ function App() {
           setLoading(false);       // set LOADING to false once data is fetched 
         })
         .catch((error) => {
-          console.error('Error Fetching Data:', error);
+
           setLoading(false);
         });
     }, []);
